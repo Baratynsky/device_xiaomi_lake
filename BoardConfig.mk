@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: Apache-2.0
 
 # Device Path
-DEVICE_PATH := device/xiaomi/lake
+DEVICE_PATH := device/xiaomi/moon
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -27,10 +27,10 @@ TARGET_2ND_CPU_VARIANT := $(TARGET_CPU_VARIANT)
 TARGET_2ND_CPU_VARIANT_RUNTIME := $(TARGET_CPU_VARIANT)
 
 # Assertation
-TARGET_OTA_ASSERT_DEVICE := lake,lake_p,pond
+TARGET_OTA_ASSERT_DEVICE := moon
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := lake
+TARGET_BOOTLOADER_BOARD_NAME := moon
 TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
 
@@ -50,7 +50,7 @@ BOARD_RAMDISK_OFFSET      := 0x07c08000
 BOARD_TAGS_OFFSET         := 0x0bc08000
 BOARD_DTB_OFFSET          := 0x0bc08000
 
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 
 BOARD_MKBOOTIMG_ARGS += \
@@ -103,8 +103,8 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_lake
-TARGET_RECOVERY_DEVICE_MODULES := libinit_lake
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_moon
+TARGET_RECOVERY_DEVICE_MODULES := libinit_moon
 
 # Recovery
 BOARD_HAS_NO_SELECT_BUTTON := true

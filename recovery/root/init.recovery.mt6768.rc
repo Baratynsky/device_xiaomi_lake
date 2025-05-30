@@ -14,13 +14,13 @@ on late-fs
 # Touch modules
 on early-init
 
-    insmod /vendor/lib/modules/ft8057m_spi.ko
-    insmod /vendor/lib/modules/ft8057p_spi.ko
-    insmod /vendor/lib/modules/icnl9916_spi.ko
-    insmod /vendor/lib/modules/lct_tp.ko
-    insmod /vendor/lib/modules/nt36528_spi.ko
+    insmod /vendor/lib/modules/alspshub.ko
+    insmod /vendor/lib/modules/alsps_common.ko
+    insmod /vendor/lib/modules/gt1151.ko
+    insmod /vendor/lib/modules/tpd_notify.ko
+    insmod /vendor/lib/modules/focaltech_tp.ko
     insmod /vendor/lib/modules/xiaomi_touch.ko
-    insmod /vendor/lib/modules/mt6358-accdet.ko
+    insmod /vendor/lib/modules/nt36672c_tp.ko
     
 on post-fs
     # Support A/B feature for EMMC and UFS boot region

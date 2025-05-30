@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_lake.mk
+    $(LOCAL_DIR)/twrp_moon.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_lake-user \
-    twrp_lake-userdebug \
-    twrp_lake-eng
+    twrp_moon-user \
+    twrp_moon-userdebug \
+    twrp_moon-eng

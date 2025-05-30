@@ -7,6 +7,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),lake)
+ifeq ($(TARGET_DEVICE),moon)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
